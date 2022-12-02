@@ -110,8 +110,11 @@ Short description
 
 ## Technologies Used
 
-- [Tech1](link to tech) - description
-- [Tech2](link to tech) - description
+- [HTML](https://en.wikipedia.org/wiki/HTML) - used to structure the web page and its content
+- [CSS](https://en.wikipedia.org/wiki/CSS) - used to style HTML files
+- [Bootsrap](https://getbootstrap.com/) - used for styling and responsiveness 
+- [Django](https://www.djangoproject.com/) - used to simplify development
+- [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) -  used to simplify user authentication, registration, account management
 - [Tech3](link to tech) - description
 
 [Back to top](#Table-of-contents)
@@ -145,8 +148,13 @@ Testing was done...
 ---
 
 ## Credits
+- ### Code
+  - Boutique Ado walk-through project from [Code Institute](https://codeinstitute.net/)
+  - [Bootstrap Docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+  - [Django-Allauth Documentation](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
 ### Content
+- Hero Image By [Pineapple Supply Co](https://www.pexels.com/photo/pile-of-assorted-photos-191429/)
 
 ### Acknowledgements
 
