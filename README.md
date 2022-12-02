@@ -39,6 +39,8 @@ Short description
 ---
 
 ### Wireframes
+- [Home Page](wireframes/wireframe_home.png)
+- [Products](wireframes/wireframe_products.png) 
 
 [Back to top](#Table-of-contents)
 
