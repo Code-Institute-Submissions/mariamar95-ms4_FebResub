@@ -53,6 +53,10 @@ Short description
 ---
 
 ### Style and colours
+![colour-palette](readme_files/colour-palette.png)
+After creating the wireframes and main structure of the home page, I needed some inspiration for the style and colour. I sourced an [image](https://www.pexels.com/photo/pile-of-assorted-photos-191429/) that I could use as the background image for the home page. Then I headed to [coolors.co](https://coolors.co/) and use the "create palette from photo" function. I uploaded the image and played around to find a palette I liked.
+![create colour palette from background image](readme_files/image_picker.png)
+
 
 [Back to top](#Table-of-contents)
 
