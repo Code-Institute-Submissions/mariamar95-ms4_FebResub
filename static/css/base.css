@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/background-image.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #c9bcab;
+}
+
+header,
+footer {
+    background-color: #475654;
+}
+
+header {
+    border-bottom: 3px solid #c9bcab;
+}
+
+footer {
+    border-top: 3px solid #c9bcab;
+}
+
+.search-btn {
+    background-color: #c9bcab;
+}
+
+.search-btn i {
+    color: #475654;
+}
+
+.logo-font {
+    text-transform: uppercase;
+
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-btn {
+    background: #857962;
+    color: white;
+    min-width: 260px;
+}
+
+
+.shop-now-btn:hover,
+.shop-now-btn:active,
+.shop-now-btn:focus {
+    background: #475654;
+    color: white;
+}
+
+.underline-effect::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #c9bcab;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.underline-effect:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+    .welcome-text {
+        position: absolute;
+        top: 50%;  
+        left: 50%; 
+    
+        transform: translate(-50%, -50%);
+    }
+}
