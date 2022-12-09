@@ -11,11 +11,25 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col">
-                {{ products }}
+    <div class="overlay"></div>
+    <div class="container-fluid product-page">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font text-danger">Products</h2>
+                <hr class="w-50 md-1">
             </div>
+        </div>
+        <div class="row">
+            {% for product in products %}
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                  <h5 class="card-title">{{ product.name }}</h5>
+                  <p class="card-text">£{{ product.price }}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
