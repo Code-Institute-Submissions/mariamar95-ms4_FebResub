@@ -1,0 +1,34 @@
+[
+    {
+       "pk":1,
+       "model":"products.category",
+       "fields":{
+          "name":"sea",
+          "friendly_name":"The Sea"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.category",
+       "fields":{
+          "name":"animals",
+          "friendly_name":"Animals"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.category",
+       "fields":{
+          "name":"nature",
+          "friendly_name":"Nature"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.category",
+       "fields":{
+          "name":"street_photography",
+          "friendly_name":"Street Photography"
+       }
+    }
+ ]
