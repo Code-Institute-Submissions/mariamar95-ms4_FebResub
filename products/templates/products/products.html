@@ -12,26 +12,25 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid product-page">
+    <div class="container-fluid product-page p-5">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font text-danger">Products</h2>
-                <hr class="w-50 md-1">
+                <h2 class="text-uppercase dark-title">Products</h2>
+                <hr class="w-50 md-1 dark-title">
             </div>
         </div>
         <div class="row">
             {% for product in products %}
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card hvr-glow product-card">
                         {% if product.image %}
-                            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                            <img src="{{ product.image.url }}" class="card-img-top rounded-0" alt="{{ product.name }}">
                         {% else %}
                             <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top" alt="{{ product.name }}">
                         {% endif %}
                         <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">£{{ product.price }}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text">£{{ product.price }}</p>
                         </div>
                     </div>
                 </div>    

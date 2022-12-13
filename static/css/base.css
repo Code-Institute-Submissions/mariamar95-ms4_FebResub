@@ -64,12 +64,70 @@ footer {
 
 }
 
+.dark-title {
+    color: #475654 !important;
+}
+
+/* PRODUCT PAGE */
+
 .product-page {
     position: absolute;
     top: 12vh;
     padding-top: 20px;
 }
+
+.product-card {
+    width: 25rem;
+    border: 3px solid #475654;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-page hr {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* code from Hover.css v2 */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.hvr-glow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+
+
 /* Media Queries */
+
 
 @media (max-width: 480px) {
     .welcome-text {
@@ -79,11 +137,16 @@ footer {
     
         transform: translate(-50%, -50%);
     }
+    .product-page {
+        top: 17vh;
+    }
 
 }
 
-@media (max-width: 768px) {
+/* tablets */
+
+@media (max-width: 850px) {
     .product-page {
-        top: 23vh;
+        top: 33vh;
     }
 }
