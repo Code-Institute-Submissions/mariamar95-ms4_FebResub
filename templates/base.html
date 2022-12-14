@@ -125,9 +125,9 @@
         </div>
         <div class="row justify-content-center">
             <a href="{% url 'products' %}" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">All Products</a>
-            <a href="" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">Portrait</a>
-            <a href="" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">Landscape</a>
-            <a href="" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">Square</a>
+            <a href="{% url 'products' %}?category=portrait" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">Portrait</a>
+            <a href="{% url 'products' %}?category=landscape" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">Landscape</a>
+            <a href="{% url 'products' %}?category=square" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">Square</a>
         </div>
     </header>
     {% if messages %}
