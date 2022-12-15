@@ -22,17 +22,26 @@
         <div class="row">
             {% for product in products %}
                 <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                    <a class="card hvr-glow product-card nav-link" href="{% url 'product_detail' product.id %}">
-                        {% if product.image %}
-                            <img src="{{ product.image.url }}" class="card-img-top rounded-0" alt="{{ product.name }}">
-                        {% else %}
-                            <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top" alt="{{ product.name }}">
-                        {% endif %}
+                    <div class="card hvr-glow product-card nav-link" href="{% url 'product_detail' product.id %}">
+                        <a href="{% url 'product_detail' product.id %}">
+                            {% if product.image %}
+                                <img src="{{ product.image.url }}" class="card-img-top rounded-0" alt="{{ product.name }}">
+                            {% else %}
+                                <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top" alt="{{ product.name }}">
+                            {% endif %}
+                        </a>
                         <div class="card-body dark-title">
                             <h5 class="card-title">{{ product.name }}</h5>
-                            <p class="card-text">£{{ product.price }}</p>
+                            {% if product.category %}
+                            <p class="small">
+                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                    <i class="fa-solid fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                </a>
+                            </p>
+                            {% endif %}
+                            <p class="card-text text-end">£{{ product.price }}</p>
                         </div>
-                    </a>
+                    </div>
                 </div>    
             {% endfor %}
         </div>
