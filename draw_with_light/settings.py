@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'checkout',
 
     # Other
+    'crispy_forms',
 
 ]
 
@@ -66,6 +67,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'draw_with_light.urls'
+
+CRISPY_TEMPLATES_PACK = 'bootstrap5'
 
 TEMPLATES = [
     {
@@ -83,6 +86,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'bag.context.bag_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
