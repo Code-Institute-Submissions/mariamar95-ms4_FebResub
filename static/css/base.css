@@ -127,7 +127,11 @@ footer {
 
 /* Bag */
 
-
+.update-link,
+.remove-item {
+    cursor: pointer;
+    text-decoration: none;
+}
 
 /* Media Queries */
 
