@@ -35,3 +35,10 @@
     color: #000;
     border: 1px solid #000;
 }
+
+.order-confirmation-wrapper p {
+  color:#475643;
+}
+.order-confirmation-wrapper {
+  border: 2px solid #475643;
+}
