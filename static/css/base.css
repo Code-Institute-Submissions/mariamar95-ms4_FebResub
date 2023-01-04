@@ -9,6 +9,10 @@ body {
     color: #c9bcab;
 }
 
+p {
+    color: #475654;
+}
+
 header,
 footer {
     background-color: #475654;
@@ -16,6 +20,10 @@ footer {
 
 header {
     border-bottom: 3px solid #c9bcab;
+}
+
+header p {
+    color: #c9bcab;
 }
 
 footer {
