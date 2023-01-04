@@ -13,6 +13,21 @@ p {
     color: #475654;
 }
 
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.nav-link {
+    padding: 5px !important;
+}
+
+.text-black {
+    color: #000;
+}
 header,
 footer {
     background-color: #475654;
@@ -32,6 +47,7 @@ footer {
 
 .search-btn {
     background-color: #c9bcab;
+    border: 2px solid #c9bcab
 }
 
 .search-btn i {
@@ -145,9 +161,11 @@ footer {
 
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 200px;
     right: 15px;
-    z-index: 999;
+    z-index: 9999;
+    height: 300px;
+    width: 300px
 }
 
 .custom-toast {
