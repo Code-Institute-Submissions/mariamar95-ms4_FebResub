@@ -28,6 +28,7 @@ a:hover {
 .text-black {
     color: #000;
 }
+
 header,
 footer {
     background-color: #475654;
@@ -164,8 +165,6 @@ footer {
     top: 200px;
     right: 15px;
     z-index: 9999;
-    height: 300px;
-    width: 300px
 }
 
 .custom-toast {
@@ -177,6 +176,9 @@ footer {
 }
 
 /* Allauth form formatting */
+.allauth-form-inner-content{
+    padding: 10px;
+}
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
@@ -301,5 +303,21 @@ footer {
 @media (max-width: 850px) {
     .product-page {
         top: 33vh;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
     }
 }
