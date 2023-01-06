@@ -95,7 +95,7 @@
                     <li class="list-inline-item">
                         <a class="nav-link hvr-grow" href="{% url 'products' %}">
                             <div class="text-center text-uppercase">
-                                <div><i class="fa-solid fa-shop"></i></i></div>
+                                <div><i class="fa-solid fa-shop"></i></div>
                                 <p class="my-0">
                                     Shop
                                 </p>
@@ -174,12 +174,13 @@
                         </li>
     
                     </ul>
+                </div>
             </div>
         </div>
     </footer>
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
