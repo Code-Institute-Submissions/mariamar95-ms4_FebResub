@@ -45,7 +45,7 @@
                 </a>
             </div>
             <!--Search Bar-->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control rounded-0" type="text" name="q" placeholder="Search our site">
@@ -59,8 +59,8 @@
                     </div>
                 </form>
             </div>
-
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <!--NavBar-->
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 navigation-list">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="nav-link hvr-grow" href="" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -92,15 +92,41 @@
                             </div>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="nav-link hvr-grow" href="{% url 'products' %}">
+                    <li class="list-inline-item dropdown">
+                        <a class="nav-link hvr-grow" href="" id="product-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center text-uppercase">
                                 <div><i class="fa-solid fa-shop"></i></div>
-                                <p class="my-0">
-                                    Shop
-                                </p>
+                                <p class="my-0">Shop</p>
                             </div>
                         </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="product-categories">
+                            <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                            <a href="{% url 'products' %}?category=portrait" class="dropdown-item">Portrait</a>
+                            <a href="{% url 'products' %}?category=landscape" class="dropdown-item">Landscape</a>
+                            <a href="{% url 'products' %}?category=square" class="dropdown-item">Square</a>
+                        </div>
+                    </li>
+                    <li class="list-inline-item dropdown d-lg-none d-xl-none">
+                        <a class="nav-link hvr-grow" href="" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center text-uppercase">
+                                <div><i class="fa-solid fa-search"></i></div>
+                                <p class="my-0">Search</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu border-0 w-100 p-1 rounded-0 my-0" aria-labelledby="mobile-search">
+                            <form method="GET" action="{% url 'products' %}">
+                                <div class="input-group w-100">
+                                    <input class="form-control rounded-0" type="text" name="q" placeholder="Search our site">
+                                    <div class="input-group-append">
+                                        <button class="form-control search-btn btn rounded-0" type="submit">
+                                            <span class="icon hvr-grow">
+                                                <i class="fa-solid fa-magnifying-glass"></i>                                
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </li>
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-black font-weight-bold {% endif %} nav-link hvr-grow" href="{% url 'view_bag' %}">
@@ -116,10 +142,11 @@
                             </div>
                         </a>
                     </li>
+
                 </ul>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center d-none d-lg-block m-auto">
             <a href="{% url 'products' %}" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">All Products</a>
             <a href="{% url 'products' %}?category=portrait" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">Portrait</a>
             <a href="{% url 'products' %}?category=landscape" class="col-lg-2 col-3 pb-2 text-uppercase nav-link text-center hvr-grow">Landscape</a>

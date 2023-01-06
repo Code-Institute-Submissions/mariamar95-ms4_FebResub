@@ -282,8 +282,6 @@ footer {
 }
 
 /* Media Queries */
-
-
 @media (max-width: 480px) {
     .welcome-text {
         position: absolute;
@@ -296,8 +294,18 @@ footer {
         top: 17vh;
     }
 
-}
+    .nav-link i{
+        font-size: 1rem;
+    }
 
+    .list-inline-item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .navigation-list{
+        font-size: 0.6rem;
+    }
+}
 /* tablets */
 
 @media (max-width: 850px) {
@@ -320,4 +328,13 @@ footer {
     .header-container {
         padding-top: 164px;
     }
+
+    @media (max-width: 1200px) {
+        .navigation-list{
+            font-size: 0.9rem;
+            padding: 0px;
+        }
+        
+    }
 }
+
