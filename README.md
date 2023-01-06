@@ -129,8 +129,7 @@ After creating the wireframes and main structure of the home page, I needed some
 ---
 
 ## Testing
-
-Testing was done...
+  Find more [here](TESTING.md)
 
 ### Found bugs
 
