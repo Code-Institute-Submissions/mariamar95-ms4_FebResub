@@ -285,13 +285,18 @@ footer {
 @media (max-width: 480px) {
     .welcome-text {
         position: absolute;
-        top: 50%;  
+        top: 40%;  
         left: 50%; 
-    
         transform: translate(-50%, -50%);
     }
+
+    .shop-now-btn{
+        padding: 5px !important;
+    }
+
     .product-page {
-        top: 17vh;
+        top: 110px;
+        padding: 10px !important;
     }
 
     .nav-link i{
@@ -305,14 +310,10 @@ footer {
     .navigation-list{
         font-size: 0.6rem;
     }
+
 }
 /* tablets */
 
-@media (max-width: 850px) {
-    .product-page {
-        top: 33vh;
-    }
-}
 
 
 
@@ -337,4 +338,12 @@ footer {
         
     }
 }
-
+@media (min-width: 1200px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
