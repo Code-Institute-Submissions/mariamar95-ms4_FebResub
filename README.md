@@ -1,6 +1,7 @@
-# [Draw with light]()
+# [Draw with light](https://draw-with-light.herokuapp.com)
+This full-stack application was developed for Draw With Light, an online shop where users can view and purchase prints of photographs. The main goal of the website is to display and sell prints to shoppers digitally. 
 
-Short description
+Draw With Light is a fictional company. It was built with Django, Python, HTML, CSS, JS and. Bootstrap.
 
 ![Mockup image](Mockup imagelink)
 
@@ -53,9 +54,9 @@ Short description
 ---
 
 ### Style and colours
-![colour-palette](readme_files/colour-palette.png)
+![colour-palette](documentation/colour-palette.png)
 After creating the wireframes and main structure of the home page, I needed some inspiration for the style and colour. I sourced an [image](https://www.pexels.com/photo/pile-of-assorted-photos-191429/) that I could use as the background image for the home page. Then I headed to [coolors.co](https://coolors.co/) and use the "create palette from photo" function. I uploaded the image and played around to find a palette I liked.
-![create colour palette from background image](readme_files/image_picker.png)
+![create colour palette from background image](documentation/image_picker.png)
 
 
 [Back to top](#Table-of-contents)
@@ -133,9 +134,21 @@ Testing was done...
 
 ### Found bugs
 
-- #### bug1
+- #### Connecting Django to AWS
 
-![bug1](img/bug1)
+  I deployed the app on Heroku but without the static files. I created a S3 Bucket on AWS to store the static files and linked that to my app. After linking AWS to my app and trying to redeploy on Heroku I was getting the following error:
+
+  ` botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
+  Error while running '$ python manage.py collectstatic --noinput'. `
+
+  To resolve the issue I have taken the following steps:
+    - I checked that the bucket policy had public access.
+    - I checked the bucket policy code written in JSON for syntax mistakes.
+    - I checked that the AWS Access Key ID and AWS Secret Access Key from where correctly added on Heroku's Config Vars.
+  
+  When checking the AWS Access Key ID I noticed that there was a '/' in it which can be problematic. I tried generating a new Access Key ID from AWS and updating it on Heroku's Config Vars which solved the issue.
+
+![AWS](documentation/aws-bug.png)
 
 - #### bug2
 
