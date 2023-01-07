@@ -5,17 +5,19 @@ html {
 }
 
 .dec-text{
-    font-family:'Rochester', 'Arial Narrow', Arial, sans-serif
+    font-family:'Rochester', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
 }
 
 .plain-text{
     font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
 }
+
 body {
     background: url('/media/background-image.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #Ece3e6;
+    color: white;
     font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -50,7 +52,7 @@ header {
 }
 
 header p {
-    color: #Ece3e6;
+    color: white;
 }
 
 footer {
@@ -58,8 +60,8 @@ footer {
 }
 
 .search-btn {
-    background-color: #Ece3e6;
-    border: 2px solid #Ece3e6;
+    background-color: white;
+    border: 2.1px solid #c9bcab;
 }
 
 .search-btn i {
@@ -95,9 +97,8 @@ footer {
     top: 0;
     left: 0;
     position: fixed;
-    background: #c9bcab;
+    background: white;
     z-index: -1;
-
 }
 
 .dark-title {
