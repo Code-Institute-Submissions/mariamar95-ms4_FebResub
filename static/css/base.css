@@ -48,7 +48,7 @@ footer {
 }
 
 header {
-    border-bottom: 3px solid #c9bcab;
+    border-bottom: 3px solid #ffffff;
 }
 
 header p {
@@ -56,7 +56,7 @@ header p {
 }
 
 footer {
-    border-top: 3px solid #c9bcab;
+    border-top: 3px solid #ffffff;
 }
 
 .search-btn {
