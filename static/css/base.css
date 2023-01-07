@@ -6,19 +6,26 @@ html {
 
 .dec-text{
     font-family:'Rochester', 'Arial Narrow', Arial, sans-serif;
-    color: #fff;
+    text-shadow: 2px 2px #c9bcabe4;
+    color:#fff;
 }
+  
+
 
 .plain-text{
     font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
-    background: url('/media/background-image.jpeg') no-repeat center center fixed;
+    background: url('/media/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: white;
     font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-page{
+    position: relative;
 }
 
 p {

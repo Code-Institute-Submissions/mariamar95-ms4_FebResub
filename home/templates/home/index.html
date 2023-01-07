@@ -11,13 +11,13 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100 product-page overflow-hidden">
+    <div class="container h-100 home-page overflow-hidden">
         <div class="row h-100">
-            <div class="col-12 col-md-6 my-auto welcome-text">
-                <h2 class="display-4 logo-font text-black">
-                    Welcome to draw with light
+            <div class="col-12 col-md-6 m-auto welcome-text text-center">
+                <h2 class="display-4 text-capitalize text-light">
+                    Welcome to <strong class="dec-text d-sm-block">draw with light</strong>
                 </h2>
-                <h3 class="text-black">Free delivery on orders over £{{ free_delivery_threshold }}!</h3>
+                <h3 class="light-text">Free delivery on orders over £{{ free_delivery_threshold }}!</h3>
                 <div class="my-5">
                     <h4>
                         <a href="{% url 'products' %}" class="shop-now-btn btn btn-lg text-uppercase py-3">Shop Now</a>
