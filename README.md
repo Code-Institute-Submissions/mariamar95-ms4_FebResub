@@ -44,7 +44,16 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
   | 3             	| Shopper 	| View details of each product    	| Learn more about each product                                                        	|
   | 4             	| Shopper 	| View the items I have in my bag 	| Check whether I still wish to purchase the items and amend the quantity if required  	|
 
-- #### VIEWING & NAVIGATION
+- #### REGISTRATION & USER ACCOUNTS
+  | User Story ID 	| As a    	| I want to be able to ...                    	| So that I can...                                        	|
+  |---------------	|---------	|---------------------------------------------	|---------------------------------------------------------	|
+  | 1             	| Shopper 	| Register an account                         	| Have an account with the site and view my profile       	|
+  | 2             	| Shopper 	| Receive an email to confirm my registration 	| Verify my account was created successfully              	|
+  | 3             	| Shopper 	| Log in and out                              	| Keep my account information secure                      	|
+  | 4             	| Shopper 	| View a profile page                         	| Set a default delivery address and view previous orders 	|
+  | 5             	| Shopper 	| Reset my password                           	| Recover my account                                      	|
+
+  
 
 [Back to top](#Table-of-contents)
 
