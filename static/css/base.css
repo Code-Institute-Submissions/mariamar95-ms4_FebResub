@@ -302,13 +302,7 @@ footer {
 
 /* Media Queries */
 @media (max-width: 480px) {
-    .welcome-text {
-        position: absolute;
-        top: 40%;  
-        left: 50%; 
-        transform: translate(-50%, -50%);
-    }
-
+    
     .shop-now-btn{
         padding: 5px !important;
     }
