@@ -35,20 +35,20 @@
                             <p class="text-muted mb-5">A summary of your bag contents is bellow</p>
                         </div>
                     </div>
-                </div>
-                {% for item in bag_items %}
-                <div class="row">
-                    <div class="col-12 col-sm-6 mb-2">{% include "bag/product-image.html" %}</div>
-                    <div class="col-12 col-sm-6 mb-2">{% include "bag/product-info.html" %}</div>
-                    <div class="col-12 col-sm-6 order-sm-last">
-                        <p class="my-0">Price Each: £{{ item.product.price }}</p>
-                        <p class="my-0"><strong>Subtotal</strong> £{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                    {% for item in bag_items %}
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-2">{% include "bag/product-image.html" %}</div>
+                        <div class="col-12 col-sm-6 mb-2">{% include "bag/product-info.html" %}</div>
+                        <div class="col-12 col-sm-6 order-sm-last">
+                            <p class="my-0">Price Each: £{{ item.product.price }}</p>
+                            <p class="my-0"><strong>Subtotal</strong> £{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-2">{% include "bag/quantity-form.html" %}</div>
                     </div>
-                    <div class="col-12 col-sm-6 mb-2">{% include "bag/quantity-form.html" %}</div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <hr>
+                    <div class="row">
+                        <div class="col">
+                            <hr>
+                        </div>
                     </div>
                 </div>
                 {% endfor %}
