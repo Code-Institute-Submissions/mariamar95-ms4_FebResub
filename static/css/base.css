@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rochester&display=swap');
+
 html {
     height: 100%;
 }
@@ -6,7 +8,7 @@ body {
     background: url('/media/background-image.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #c9bcab;
+    color: #Ece3e6;
 }
 
 p {
@@ -39,7 +41,7 @@ header {
 }
 
 header p {
-    color: #c9bcab;
+    color: #Ece3e6;
 }
 
 footer {
@@ -47,8 +49,8 @@ footer {
 }
 
 .search-btn {
-    background-color: #c9bcab;
-    border: 2px solid #c9bcab
+    background-color: #Ece3e6;
+    border: 2px solid #Ece3e6;
 }
 
 .search-btn i {
