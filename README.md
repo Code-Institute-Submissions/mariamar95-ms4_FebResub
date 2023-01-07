@@ -3,7 +3,7 @@ This full-stack application was developed for Draw With Light, an online shop wh
 
 Draw With Light is a fictional company. It was built with Django, Python, HTML, CSS, JS and. Bootstrap.
 
-![Mockup image](Mockup imagelink)
+![Website on different screens](media/amiresponsive.png)
 
 ---
 
@@ -99,6 +99,7 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
 ![colour-palette](documentation/colour-palette.png)
 After creating the wireframes and main structure of the home page, I needed some inspiration for the style and colour. I sourced an [image](https://www.pexels.com/photo/pile-of-assorted-photos-191429/) that I could use as the background image for the home page. Then I headed to [coolors.co](https://coolors.co/) and use the "create palette from photo" function. I uploaded the image and played around to find a palette I liked.
 ![create colour palette from background image](documentation/image_picker.png)
+I ended up only using the green colours with white to create contrast and make all text easy to read.
 
 
 [Back to top](#Table-of-contents)
@@ -176,6 +177,7 @@ After creating the wireframes and main structure of the home page, I needed some
 ### Found bugs
 
 - #### Connecting Django to AWS
+  ![AWS](documentation/aws-bug.png)
 
   I deployed the app on Heroku but without the static files. I created a S3 Bucket on AWS to store the static files and linked that to my app. After linking AWS to my app and trying to redeploy on Heroku I was getting the following error:
 
@@ -186,16 +188,23 @@ After creating the wireframes and main structure of the home page, I needed some
     - I checked that the bucket policy had public access.
     - I checked the bucket policy code written in JSON for syntax mistakes.
     - I checked that the AWS Access Key ID and AWS Secret Access Key from where correctly added on Heroku's Config Vars.
-  
+
   When checking the AWS Access Key ID I noticed that there was a '/' in it which can be problematic. I tried generating a new Access Key ID from AWS and updating it on Heroku's Config Vars which solved the issue.
 
-![AWS](documentation/aws-bug.png)
 
-- #### bug2
+- #### Stipe Webhook Response Error 
+  ![stripe-response error](documentation/stripe-1.png)
+  After successfully placing an order, I was getting a 404 response on stripe which meant that the endpoint webhook wasn't found. I found out that it was caused by Gitpod changing the server number of my workspace from eu-80 to eu-81. I updated the endpoint on Stripe and placed another order to test it.
+  ![stripe-response error](documentation/stripe-2.png)
+  After updating the endpoint I was getting a 400 error. I added some print statements on the webhook file will which raised the following error:
+  ![stripe-response error](documentation/stripe-3.png)
+  Stripe's Webhook Secret Key wasn't coming through which was causing the problem. That was happening because when I added the Webhook Secret on Heroku's Vars I forgot to added on my env file. When I added the Webhook Secret on the env file I also found that I forgot to add 'DEVELOPMENT' on that file as well. After updating both I placed another order to test it and checked on stipe's webhook logs.
+  ![stripe-response error](documentation/stripe-4.png)
+  I was getting a 200-OK Response. I committed the changes and tested the deployed app on Heroku as well. After placing an order on the deployed app, I was getting and error again which was caused by a missing trailing slash in the endpoint.
+   ![stripe-response error](documentation/stripe-5.png)
+  I edited the endpoint on stripe, placed and other order and tested it again.
+   ![stripe-response error](documentation/stripe-6.png)
 
-![bug2](img/bug2)
-
-- #### bug3
 
 ![bug1](img/bug3)
 
