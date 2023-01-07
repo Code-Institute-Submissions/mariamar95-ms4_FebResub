@@ -35,6 +35,17 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
 
 ### User Stories
 
+- #### VIEWING & NAVIGATION
+  
+  | User Story Id 	| As a    	| I want to be able to...         	| So that I can...                                                                     	|
+  |---------------	|---------	|---------------------------------	|--------------------------------------------------------------------------------------	|
+  | 1             	| Shopper 	| Easily navigate the site        	| Find products and information that I require                                         	|
+  | 2             	| Shopper 	| View products by category       	| Find specific items I am interested in without having to scroll through all products 	|
+  | 3             	| Shopper 	| View details of each product    	| Learn more about each product                                                        	|
+  | 4             	| Shopper 	| View the items I have in my bag 	| Check whether I still wish to purchase the items and amend the quantity if required  	|
+
+- #### VIEWING & NAVIGATION
+
 [Back to top](#Table-of-contents)
 
 ---
