@@ -37,24 +37,46 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
 
 - #### VIEWING & NAVIGATION
   
-  | User Story Id 	| As a    	| I want to be able to...         	| So that I can...                                                                     	|
-  |---------------	|---------	|---------------------------------	|--------------------------------------------------------------------------------------	|
-  | 1             	| Shopper 	| Easily navigate the site        	| Find products and information that I require                                         	|
-  | 2             	| Shopper 	| View products by category       	| Find specific items I am interested in without having to scroll through all products 	|
-  | 3             	| Shopper 	| View details of each product    	| Learn more about each product                                                        	|
-  | 4             	| Shopper 	| View the items I have in my bag 	| Check whether I still wish to purchase the items and amend the quantity if required  	|
+    | User Story Id 	| As a    	| I want to be able to...         	| So that I can...                                                                     	|
+    |---------------	|---------	|---------------------------------	|--------------------------------------------------------------------------------------	|
+    | 1             	| Shopper 	| Easily navigate the site        	| Find products and information that I require                                         	|
+    | 2             	| Shopper 	| View products by category       	| Find specific items I am interested in without having to scroll through all products 	|
+    | 3             	| Shopper 	| View details of each product    	| Learn more about each product                                                        	|
+    | 4             	| Shopper 	| View the items I have in my bag 	| Check whether I still wish to purchase the items and amend the quantity if required  	|
 
 - #### REGISTRATION & USER ACCOUNTS
-  | User Story ID 	| As a    	| I want to be able to ...                    	| So that I can...                                        	|
-  |---------------	|---------	|---------------------------------------------	|---------------------------------------------------------	|
-  | 1             	| Shopper 	| Register an account                         	| Have an account with the site and view my profile       	|
-  | 2             	| Shopper 	| Receive an email to confirm my registration 	| Verify my account was created successfully              	|
-  | 3             	| Shopper 	| Log in and out                              	| Keep my account information secure                      	|
-  | 4             	| Shopper 	| View a profile page                         	| Set a default delivery address and view previous orders 	|
-  | 5             	| Shopper 	| Reset my password                           	| Recover my account                                      	|
+    | User Story ID 	| As a    	| I want to be able to ...                    	| So that I can...                                        	|
+    |---------------	|---------	|---------------------------------------------	|---------------------------------------------------------	|
+    | 1             	| Shopper 	| Register an account                         	| Have an account with the site and view my profile       	|
+    | 2             	| Shopper 	| Receive an email to confirm my registration 	| Verify my account was created successfully              	|
+    | 3             	| Shopper 	| Log in and out                              	| Keep my account information secure                      	|
+    | 4             	| Shopper 	| View a profile page                         	| Set a default delivery address and view previous orders 	|
+    | 5             	| Shopper 	| Reset my password                           	| Recover my account                                      	|
 
-  
+- #### SORTING AND SEARCHING
+    | User Story ID 	| As a    	| I want to be able to...                     	| So that I can...                             	|
+    |---------------	|---------	|---------------------------------------------	|----------------------------------------------	|
+    | 1             	| Shopper 	| Search for a product by name or description 	| Find a specific product I'd like to purchase 	|
+    | 2             	| Shopper 	| Find products from a specific category      	| Only see product from that category          	|
 
+- #### PURCHASING & CHECKOUT
+    | User Story ID 	| As a    	| I want to be able to...                                    	| So that I can...                                                                        	|
+    |---------------	|---------	|------------------------------------------------------------	|-----------------------------------------------------------------------------------------	|
+    | 1             	| Shopper 	| Easily select the quantity of a product when purchasing it 	| Ensure I don't accidentally select the wrong product quantity                           	|
+    | 2             	| Shopper 	| View all items in my bag                                   	| Make sure I haven't accidentally added the wrong product in my bag                      	|
+    | 3             	| Shopper 	| Adjust the quantity of individual items in my bag          	| Easily make changes to my purchase before checkout                                      	|
+    | 4             	| Shopper 	| Easily enter my payment information                        	| Check out quickly and with no hassles                                                   	|
+    | 5             	| Shopper 	| Save all address info                                      	| I don't have to enter them again on my next order                                       	|
+    | 6             	| Shopper 	| View an order confirmation after checkout                  	| Make sure my order was successfully placed and double check that all detail are correct 	|
+    | 7             	| Shopper 	| Save all orders on my Profile                              	| Easily access all oreders anytime                                                       	|
+    | 8             	| Shopper 	| Receive an email confirmation after checking out           	| Keep the confirmation of what I've purchased for my records                             	|
+
+- #### ADMIN & STORE MANAGEMENT
+  | User Story ID 	| As a              	| I want to be able to... 	| So that I can...                         	|
+  |---------------	|-------------------	|-------------------------	|------------------------------------------	|
+  | 1             	| Store Owner/Admin 	| Add a product           	| Add new items to my store                	|
+  | 2             	| Store Owner/Admin 	| Edit a product          	| Update product details                   	|
+  | 3             	| Store Owner/Admin 	| Delete a product        	| Remove items that are no longer for sale 	|
 [Back to top](#Table-of-contents)
 
 ---
