@@ -4,15 +4,24 @@ html {
     height: 100%;
 }
 
+.dec-text{
+    font-family:'Rochester', 'Arial Narrow', Arial, sans-serif
+}
+
+.plain-text{
+    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
+}
 body {
     background: url('/media/background-image.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #Ece3e6;
+    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
 }
 
 p {
     color: #475654;
+    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
