@@ -9,8 +9,6 @@ html {
     text-shadow: 2px 2px #c9bcabe4;
     color:#fff;
 }
-  
-
 
 .plain-text{
     font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
@@ -302,7 +300,7 @@ footer {
 
 /* Media Queries */
 @media (max-width: 480px) {
-    
+
     .shop-now-btn{
         padding: 5px !important;
     }
@@ -365,5 +363,13 @@ footer {
         right: 0;
         left: 0;
         z-index: 1030;
+    }
+
+    .product-page {
+        max-width: 1100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
 }
