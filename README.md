@@ -11,7 +11,8 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
 
 - [Draw with light](#draw-with-light)
   - [Table of contents](#table-of-contents)
-  - [UX](#ux)
+  - [UX Design](#ux-design)
+    - [Project Goals](#project-goals)
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
     - [Database schema](#database-schema)
@@ -29,9 +30,10 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
 
 ---
 
-## UX
+## UX Design
 
 ---
+### Project Goals
 
 ### User Stories
 
@@ -90,6 +92,7 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
 ---
 
 ### Database schema
+![](documentation/db.png)
 
 [Back to top](#Table-of-contents)
 
