@@ -112,6 +112,8 @@ This site is for training purposes only, the company is fictional and no orders 
 After creating the wireframes and main structure of the home page, I needed some inspiration for the style and colour. I sourced an [image](https://www.pexels.com/photo/pile-of-assorted-photos-191429/) that I could use as the background image for the home page. Then I headed to [coolors.co](https://coolors.co/) and use the "create palette from photo" function. I uploaded the image and played around to find a palette I liked.
 ![create colour palette from background image](documentation/image_picker.png)
 I ended up only using the green colours with white to create contrast and make all text easy to read.
+![logo](documentation/logo.png)
+The website used two fonts, Rochester for the logo and Nunito for the rest on the site
 
 
 [Back to top](#Table-of-contents)
