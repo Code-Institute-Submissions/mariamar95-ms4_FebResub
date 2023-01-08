@@ -18,8 +18,8 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
     - [Database schema](#database-schema)
     - [Style and colours](#style-and-colours)
   - [Features](#features)
-    - [Existing Features](#existing-features)
-    - [Future Features](#future-features)
+    - [Each page of the site shares the following:](#each-page-of-the-site-shares-the-following)
+  - [Future Implementations](#future-implementations)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
     - [Found bugs](#found-bugs)
@@ -70,7 +70,7 @@ Draw With Light is a fictional company. It was built with Django, Python, HTML, 
     | 4             	| Shopper 	| Easily enter my payment information                        	| Check out quickly and with no hassles                                                   	|
     | 5             	| Shopper 	| Save all address info                                      	| I don't have to enter them again on my next order                                       	|
     | 6             	| Shopper 	| View an order confirmation after checkout                  	| Make sure my order was successfully placed and double check that all detail are correct 	|
-    | 7             	| Shopper 	| Save all orders on my Profile                              	| Easily access all oreders anytime                                                       	|
+    | 7             	| Shopper 	| Save all orders on my Profile                              	| Easily access all orders anytime                                                       	|
     | 8             	| Shopper 	| Receive an email confirmation after checking out           	| Keep the confirmation of what I've purchased for my records                             	|
 
 - #### ADMIN & STORE MANAGEMENT
@@ -111,41 +111,30 @@ I ended up only using the green colours with white to create contrast and make a
 
 ## Features
 
-### Existing Features
+### Each page of the site shares the following:
+  -  **Favicon**
+     I used [Favivon.io](https://favicon.io/) to create the favicon for the site. I have used the initials of the site to create the favicon and the same font and colours from the site.
+      
+      ![favicon](static/favicon/favicon-32x32.png)
+  -  **Navigation Bar**
+      The navigation bar changed based on the size of the screen used.
+      ![nav-bar](documentation/nav-bar.png)
+      ![mobile nav bar](documentation/nav-bar-mobile.png)
 
-- #### Feature1
-
-![Feature1](path here: static/images/homepage.png)
-
-[Back to top](#Table-of-contents)
-
----
-
-- #### Feature2
-
-![Feature2](path here: static/images/homepage.png)
+  -  **Footer**  
 
 [Back to top](#Table-of-contents)
 
 ---
 
-- #### Feature3
-
-![Feature3](path here: static/images/homepage.png)
-
-[Back to top](#Table-of-contents)
-
----
-
-### Future Features
-
-- #### Favorite Feature 1
-
-[Back to top](#Table-of-contents)
-
----
-
-- #### Favorite Feature 2
+## Future Implementations
+- #### In future implementations I would like to:
+  - **Add Wishlist functionality**: Allow users to save all their favorite prints so that it is easier to find them when they revisit the website.
+  - **Add user reviews**: Allow users to review products and share photos of how the used the print to decorate their space.
+  - **Send newsletters to users**: Give all users the option to sign up to the newsletter and keep them updated on the latest offers.
+  - **Allow coupons to be accepted in the checkout**: This is a way to increase sales by offering discounted price to customers. For example offering a discount to a registered user that has not placed any orders to motivate them or reward a repeated customer.
+  - **Subscription**: Give users the option to subscribe, paying a monthly fee and getting a free print every month.
+  - **Implement Social login/register**: Give users the option to register and login using their social accounts.
 
 [Back to top](#Table-of-contents)
 
