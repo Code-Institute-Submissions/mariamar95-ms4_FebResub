@@ -140,24 +140,35 @@ I ended up only using the green colours with white to create contrast and make a
 
 ---
 
-- #### List of other future features
-
-  - ff1
-  - ff2
-  - ff3
-
-[Back to top](#Table-of-contents)
-
----
-
 ## Technologies Used
-
-- [HTML](https://en.wikipedia.org/wiki/HTML) - used to structure the web page and its content
-- [CSS](https://en.wikipedia.org/wiki/CSS) - used to style HTML files
-- [Bootsrap](https://getbootstrap.com/) - used for styling and responsiveness 
-- [Django](https://www.djangoproject.com/) - used to simplify development
-- [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) -  used to simplify user authentication, registration, account management
-- [Tech3](link to tech) - description
+- Languages Used
+  - [HTML](https://en.wikipedia.org/wiki/HTML) 
+  - [CSS](https://en.wikipedia.org/wiki/CSS) 
+  - [Javascript](https://www.javascript.com/) 
+- Frameworks Used
+  - [Django](https://www.djangoproject.com/) - used to simplify development   
+  - [Bootsrap](https://getbootstrap.com/) - used for styling and responsiveness 
+- Database Used
+  - [sqlite3](https://docs.python.org/3/library/sqlite3.html) - used for development
+  - [ElephantSQL](https://www.elephantsql.com/) - used for deployment
+- Libraries & Packages Used
+  - [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) -  used to simplify user authentication, registration, account management
+  - [Font Awesome](https://fontawesome.com/) - used for all the icons on the site
+  - [django-countries](https://pypi.org/project/django-countries/) - dropdown list of countries used on checkout
+  - [django_crispy_forms](https://pypi.org/project/django-crispy-forms/) - provides a tag and filter that lets you quickly render forms
+  - [gunicorn](https://pypi.org/project/gunicorn/) - a Python WSGI HTTP Server
+  - [pillow](https://pypi.org/project/Pillow/) - Python imaging library
+  - [dj_databsae_url](https://pypi.org/project/dj-database-url/) - allows us to utilise the DATABASE_URL variable
+  - [psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database
+  - [django-storages](https://pypi.org/project/django-storages/) - a storage backend library
+  - [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
+- Stripe
+  - [Stripe](https://stripe.com/gb) was used in the project to implement the payment system
+- Programs Used
+  - [Favicon](https://favicon.io/) used to create the favicon
+  - [Git](https://git-scm.com/) - used for version control.
+  - [GitHub](https://github.com/) - used o save and store the files for this project.
+  - [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot, test features and solve issues with responsiveness and styling.
 
 [Back to top](#Table-of-contents)
 
@@ -216,6 +227,7 @@ I ended up only using the green colours with white to create contrast and make a
 
 ### Content
 - Hero Image By [Pineapple Supply Co](https://www.pexels.com/photo/pile-of-assorted-photos-191429/)
+- Product Photos: I have taken all the photos on the website. You can find some of them on my [Instagram](https://www.instagram.com/mkp.maria/)
 
 ### Acknowledgements
 
