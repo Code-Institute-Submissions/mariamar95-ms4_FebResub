@@ -12,7 +12,11 @@
   - [Automated Testing](#automated-testing)
   - [Manual Testing](#manual-testing)
     - [Testing User Stories](#testing-user-stories)
+    - [Devices used for testing:](#devices-used-for-testing)
+    - [Browsers Used for Testing](#browsers-used-for-testing)
   - [Bugs](#bugs)
+    - [Solved](#solved)
+    - [Known Bugs](#known-bugs)
 ## Code Validation
   ### HTML
   All templates were validated using W3C
@@ -135,6 +139,7 @@ The apps that i have tested are:
    ![](documentation/test-bag.png)
   - Products
    ![](documentation/test-products.png)
+These tests are all in a separate file called test_views.py within the relevant app folders, and have been written using Python.
 
 [Back to top](#Table-of-contents)
 
@@ -219,59 +224,76 @@ The apps that i have tested are:
     ![](documentation/admin-product-detail.png)
   3. **As an admin I want to be able to delete a product so that I can remove items that are no longer for sale**
    When a superuser is logged in, they are shown an edit delete button underneath each product on the products page. The same delete button is also shown on the product detail page. Once the admin clicks the button the product is     automatically deleted
+### Devices used for testing:
+- MacBook Pro 15' - Desktop
+- Xiaomi Redmi Note 10 - Mobile
+- From DevTools the following preset dimensions:
+  - iPhone SE
+  - iPhone XR
+  - iPhone Pro 12
+  - Samsung Galaxy S8+
+  - iPad Air
+  - iPad Mini
+  - Surface Pro 7
+  - Nest Hub
+  - Nest Hub Max 
 
-
-  
-
-
-    
-    
-
-
+### Browsers Used for Testing
+- Google Chrome
+- Monzila FireFox
+- Safari 
+No issues found
 
 [Back to top](#Table-of-contents)
 
 ---
 
-
 ## Bugs
-- ### Stipe Webhook Response Error 
-  ![stripe-response error](documentation/stripe-1.png)
-  After successfully placing an order, I was getting a 404 response on stripe which meant that the endpoint webhook wasn't found. I found out that it was caused by Gitpod changing the server number of my workspace from eu-80 to eu-81. I updated the endpoint on Stripe and placed another order to test it.
-  ![stripe-response error](documentation/stripe-2.png)
-  After updating the endpoint I was getting a 400 error. I added some print statements on the webhook file will which raised the following error:
-  ![stripe-response error](documentation/stripe-3.png)
-  Stripe's Webhook Secret Key wasn't coming through which was causing the problem. That was happening because when I added the Webhook Secret on Heroku's Vars I forgot to added on my env file. When I added the Webhook Secret on the env file I also found that I forgot to add 'DEVELOPMENT' on that file as well. After updating both I placed another order to test it and checked on stipe's webhook logs.
-  ![stripe-response error](documentation/stripe-4.png)
-  I was getting a 200-OK Response. I committed the changes and tested the deployed app on Heroku as well. After placing an order on the deployed app, I was getting and error again which was caused by a missing trailing slash in the endpoint.
-   ![stripe-response error](documentation/stripe-5.png)
-  I edited the endpoint on stripe, placed and other order and tested it again.
-   ![stripe-response error](documentation/stripe-6.png)
-[Back to top](#Table-of-contents)
+### Solved
+  - #### Stipe Webhook Response Error 
+    ![stripe-response error](documentation/stripe-1.png)
+    After successfully placing an order, I was getting a 404 response on stripe which meant that the endpoint webhook wasn't found. I found out that it was caused by Gitpod changing the server number of my workspace from eu-80 to eu-81. I updated the endpoint on Stripe and placed another order to test it.
+    ![stripe-response error](documentation/stripe-2.png)
+    After updating the endpoint I was getting a 400 error. I added some print statements on the webhook file will which raised the following error:
+    ![stripe-response error](documentation/stripe-3.png)
+    Stripe's Webhook Secret Key wasn't coming through which was causing the problem. That was happening because when I added the Webhook Secret on Heroku's Vars I forgot to added on my env file. When I added the Webhook Secret on the env file I also found that I forgot to add 'DEVELOPMENT' on that file as well. After updating both I placed another order to test it and checked on stipe's webhook logs.
+    ![stripe-response error](documentation/stripe-4.png)
+    I was getting a 200-OK Response. I committed the changes and tested the deployed app on Heroku as well. After placing an order on the deployed app, I was getting and error again which was caused by a missing trailing slash in the endpoint.
+     ![stripe-response error](documentation/stripe-5.png)
+    I edited the endpoint on stripe, placed and other order and tested it again.
+     ![stripe-response error](documentation/stripe-6.png)
+  [Back to top](#Table-of-contents)
 
 
 
-  To resolve the issue I have taken the following steps:
-  - I checked that the bucket policy had public access.
-  - I checked the bucket policy code written in JSON for syntax mistakes.
-  - I checked that the AWS Access Key ID and AWS Secret Access Key from where correctly added on Heroku's Config Vars.
-
-  When checking the AWS Access Key ID I noticed that there was a '/' in it which can be problematic. I tried generating a new Access Key ID from AWS and updating it on Heroku's Config Vars which solved the issue.
-  
-  ---
-- ### Connecting Django to AWS
-  ![AWS](documentation/aws-bug.png)
-
-  I deployed the app on Heroku but without the static files. I created a S3 Bucket on AWS to store the static files and linked that to my app. After linking AWS to my app and trying to redeploy on Heroku I was getting the following error:
-  
-  ```
-   botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
-   Error while running '$ python manage.py collectstatic --noinput'. 
-  ```
-
-  To resolve the issue I have taken the following steps:
+    To resolve the issue I have taken the following steps:
     - I checked that the bucket policy had public access.
     - I checked the bucket policy code written in JSON for syntax mistakes.
     - I checked that the AWS Access Key ID and AWS Secret Access Key from where correctly added on Heroku's Config Vars.
 
-  When checking the AWS Access Key ID I noticed that there was a '/' in it which can be problematic. I tried generating a new Access Key ID from AWS and updating it on Heroku's Config Vars which solved the issue.
+    When checking the AWS Access Key ID I noticed that there was a '/' in it which can be problematic. I tried generating a new Access Key ID from AWS and updating it on Heroku's Config Vars which solved the issue.
+    
+    ---
+  - #### Connecting Django to AWS
+    ![AWS](documentation/aws-bug.png)
+
+    I deployed the app on Heroku but without the static files. I created a S3 Bucket on AWS to store the static files and linked that to my app. After linking AWS to my app and trying to redeploy on Heroku I was getting the following error:
+    
+    ```
+     botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
+     Error while running '$ python manage.py collectstatic --noinput'. 
+    ```
+
+    To resolve the issue I have taken the following steps:
+      - I checked that the bucket policy had public access.
+      - I checked the bucket policy code written in JSON for syntax mistakes.
+      - I checked that the AWS Access Key ID and AWS Secret Access Key from where correctly added on Heroku's Config Vars.
+
+    When checking the AWS Access Key ID I noticed that there was a '/' in it which can be problematic. I tried generating a new Access Key ID from AWS and updating it on Heroku's Config Vars which solved the issue.
+
+  - #### The jQuery was not working for the toasts
+ I researched this issue on slack and it seemed to be a known error with the toasts and bootstrap 5. As I was on a very tight deadline for this project and could not find a solution over an afternoon, despite bootstrap 5 being compatible for use with jQuery, I have decided to revert the bootstrap version used in the project down to 4.4.1. This also meant that I had to update some of the css
+ ![](documentation/test-toast-1.png)
+ ![](documentation/test-toast2.png)
+
+### Known Bugs
