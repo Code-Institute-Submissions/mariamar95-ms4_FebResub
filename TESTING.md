@@ -127,12 +127,14 @@ All `E501 line too long` results were fixed
 --- 
 
 ## Automated Testing
-- Home Page
- ![](documentation/test-home.png)
-- Bag
- ![](documentation/test-bag.png)
-- Products
- ![](documentation/test-products.png)
+In this project their are 3 instances of automated testing. I would like to note that if given more time i would have liked to have expanded on this, however the deadline was extremely tight.
+The apps that i have tested are:
+  - Home Page
+   ![](documentation/test-home.png)
+  - Bag
+   ![](documentation/test-bag.png)
+  - Products
+   ![](documentation/test-products.png)
 
 [Back to top](#Table-of-contents)
 
