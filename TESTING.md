@@ -297,3 +297,6 @@ No issues found
  ![](documentation/test-toast2.png)
 
 ### Known Bugs
+- #### County Input Field
+- Both on Profile and Checkout Page, the country input field is longer that the rest of the input fields. I wanted to customise the input forms and add some space around the input fields but I run out of time.
+![](documentation/checkout-bug.png)
