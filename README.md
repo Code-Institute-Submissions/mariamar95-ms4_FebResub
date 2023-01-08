@@ -95,7 +95,10 @@ This site is for training purposes only, the company is fictional and no orders 
 
   ### Wireframes
   - [Home Page](wireframes/wireframe_home.png)
-  - [Products](wireframes/wireframe_products.png) 
+  - [Products](wireframes/wireframe_products.png)
+  - [Product Details](wireframes/product-details.png)
+  - [Profile](wireframes/profile.png)
+  - [Shopping Bag](wireframes/shopping-bag.png) 
 
   [Back to top](#Table-of-contents)
 
