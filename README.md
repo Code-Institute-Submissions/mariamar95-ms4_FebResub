@@ -99,6 +99,12 @@ This site is for training purposes only, the company is fictional and no orders 
   - [Product Details](wireframes/product-details.png)
   - [Profile](wireframes/profile.png)
   - [Shopping Bag](wireframes/shopping-bag.png) 
+  - [Add A Product](wireframes/addproduct.png)
+  - [Checkout](wireframes/checkout.png)
+  - [Checkout Success](wireframes/checkoutsucc.png)
+  - [Register](wireframes/signup.png)
+  - [Login](wireframes/signin.png)
+  - [Logout](wireframes/signout.png)
 
   [Back to top](#Table-of-contents)
 
