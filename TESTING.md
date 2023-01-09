@@ -14,6 +14,7 @@
     - [Testing User Stories](#testing-user-stories)
     - [Devices used for testing:](#devices-used-for-testing)
     - [Browsers Used for Testing](#browsers-used-for-testing)
+    - [Google Lighthouse](#google-lighthouse)
   - [Bugs](#bugs)
     - [Solved](#solved)
     - [Known Bugs](#known-bugs)
@@ -237,16 +238,22 @@ These tests are all in a separate file called test_views.py within the relevant 
   - Surface Pro 7
   - Nest Hub
   - Nest Hub Max 
-
 ### Browsers Used for Testing
 - Google Chrome
 - Monzila FireFox
 - Safari 
 No issues found
 
+### Google Lighthouse 
+- Home Page 
+  Home page was checked using [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en). The following issue was found on the navigation bar which was affecting SEO. I wanted to fix it but run out of time.
+  ![](documentation/home-lh-1.png)
+  ![](documentation/home-lh-2.png)
 [Back to top](#Table-of-contents)
 
 ---
+
+
 
 ## Bugs
 ### Solved
