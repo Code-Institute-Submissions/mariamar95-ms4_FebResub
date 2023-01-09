@@ -176,12 +176,14 @@ These tests are all in a separate file called test_views.py within the relevant 
     ![](documentation/account-d.png)
     When a user clicks the login option, they are taken to the sign in form where they can fill in their info and sign in
     ![](documentation/signin.png)
+    When a user is logged and clicks on the account icon they can see a log out option. By clicking that they are taken to the logout page where they need to confirm that they want to logout.
+    ![](documentation/sign-out.png)
     4. **As a shopper I want to be able to view my profile page so that I can set a default delivery address and view previous orders**
     Users are able to view their profile page once logged in via the account icon on the navbar which is accessible on all pages of the site. Their profile allows them to select their default delivery information (if filled out will pre-populate the checkout page if the user is signed in). Users are also able to view their previous orders within their profile.
     ![](documentation/profile-orders.png)
     When a users clicks on the order number it takes them to a different page where they can see all the order details
     5. **As a shopper I want to be able to reset my password so that I can recover my account**
-    If a user has forgotten their password, they can click on the forgotten password button during login to reset their password
+    If a user has forgotten their password, they can click on the forgotten password button during login to reset their password. They have to enter their email address. Then they receive an email with a link that takes them to a new page where they will be asked to enter their new password.
     ![](documentation/reset-pass.png)
   - #### SORTING AND SEARCHING
   1. **As a shopper I want to be able to search for a product by name or description	so that I can find a specific product I'd like to purchase**
@@ -201,7 +203,7 @@ These tests are all in a separate file called test_views.py within the relevant 
   Users are given a quantity selector on the bag page that looks the same as on the product detail page to provide continuity and familiarity. Once the user has selected the new quantity, they click the update link under the quantity input and the page will reload and prices will update.
   If a user decides they would like to remove the item completely from their bag they do so by clicking the remove link under the product. This shows a toast which confirms that the user has successfully deleted the selected item from their bag. 
   ![](documentation/success.png)
-  4. **As as shopper I want to be able to easily enter my payment information so that	I can check out quickly and with no hassles**
+  4. **As as shopper I want to be able to easily enter my payment information so that	I can check out quickly and with no hassle**
   When a user is taken to the checkout page they can clearly see 3 sections of information that need to be completed to complete their order - their details, the delivery information and the payment information. Feedback is provided to the user whilst completing the checkout if any information they give is invalid.
   5.  **As as shopper I want to be able to save all address info so that I don't have to enter them again on my next order**
   If a user is logged in and on the checkout page, they have the option to save their delivery info by leaving the the "Save this delivery information to my profile" ticked. They also have the option to go to their profile page and fill in the info there
