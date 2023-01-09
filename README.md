@@ -35,7 +35,6 @@ This site is for training purposes only, the company is fictional and no orders 
     - [Setting up Stripe](#setting-up-stripe)
   - [Credits](#credits)
     - [Content](#content)
-    - [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -77,9 +76,9 @@ This site is for training purposes only, the company is fictional and no orders 
         | 1             	| Shopper 	| Easily select the quantity of a product when purchasing it 	| Ensure I don't accidentally select the wrong product quantity                           	|
         | 2             	| Shopper 	| View all items in my bag                                   	| Make sure I haven't accidentally added the wrong product in my bag                      	|
         | 3             	| Shopper 	| Adjust the quantity of individual items in my bag          	| Easily make changes to my purchase before checkout                                      	|
-        | 4             	| Shopper 	| Easily enter my payment information                        	| Check out quickly and with no hassles                                                   	|
+        | 4             	| Shopper 	| Easily enter my payment information                        	| Check out quickly and with no hassle                                                   	|
         | 5             	| Shopper 	| Save all address info                                      	| I don't have to enter them again on my next order                                       	|
-        | 6             	| Shopper 	| View an order confirmation after checkout                  	| Make sure my order was successfully placed and double check that all detail are correct 	|
+        | 6             	| Shopper 	| View an order confirmation after checkout                  	| Make sure my order was successfully placed and double check that all details are correct 	|
         | 7             	| Shopper 	| Save all orders on my Profile                              	| Easily access all orders anytime                                                       	|
         | 8             	| Shopper 	| Receive an email confirmation after checking out           	| Keep the confirmation of what I've purchased for my records                             	|
 
@@ -129,6 +128,7 @@ After creating the wireframes and main structure of the home page, I needed some
 ![create colour palette from background image](documentation/image_picker.png)
 I ended up only using the green colours with white to create contrast and make all text easy to read.
 ![logo](documentation/logo.png)
+
 The website used two fonts, Rochester for the logo and Nunito for the rest on the site
 
 [Back to top](#Table-of-contents)
@@ -137,10 +137,11 @@ The website used two fonts, Rochester for the logo and Nunito for the rest on th
 
 ## Features
   - **Favicon**
-    I used [Favivon.io](https://favicon.io/) to create the favicon for the site. I have used the initials of the site to create the favicon and the same font and colours from the site.
+    [Favivon.io](https://favicon.io/) was used. Is is the initials of the site, using the same font and colours.
+
     ![favicon](static/favicon/favicon-32x32.png)
   -  **Navigation Bar**
-    The navigation bar changed based on the size of the screen used.
+    The navigation bar changes based on the size of the screen used.
       ![nav-bar](documentation/nav-bar.png)
       ![mobile nav bar](documentation/nav-bar-mobile.png)
   -  **Footer**
@@ -148,29 +149,31 @@ The website used two fonts, Rochester for the logo and Nunito for the rest on th
   -  **Messages - Toasts**  
     This site uses django's messages framework to provide users with helpful feedback at multiple points through their journey in the form of toasts.
     ![](documentation/success.png)
+
   -  **Home Page**
-    When users land on the home page, they see a welcome message. Under they welcome message they can find what offer is on at the moment and a shop button so that they can view all products with one click
+    When users land on the home page, they see a welcome message. Under the welcome message they can find what offer is on at the moment and a shop button so that they can view all products with one click.
     ![](documentation/home.png)   
   -  **Products Page**
-    The product page contains cards for each product. Users can find the name, category and price of the product. Superusers can also find a delete and edit button on the cards  
+    The product page contains cards for each product. Users can find the name, category and price of the product. Superusers can also find a delete and edit button on the cards.  
     ![](documentation/p-page.png)
     -  **Profile Page**
-    On the profile page, users can save their delivery information so that they do not have to enter them every time they place and order. They can also view a list with all the orders they have placed.
+    On the profile page, users can save their delivery information so that they do not have to enter them every time they place an order. They can also view a list with all the orders they have placed.
     ![](documentation/profile.png)
     -  **Bag Page**
-    On the bag page users can find a list of all items added to their bag. The product name, price, sku, quantity and subtotal is displayed for each product. Users can also update the quantity and remove and item from their bag. They can also find out the bag total, delivery cost (when applicable) and grand total. If they are happy with their order they can click on the secure checkout button. A "keep shopping" button is located at the bottom of the page that takes the user back to products.
+    On the bag page users can find a list of all items added to their bag. The product name, price, sku, quantity and subtotal is displayed for each product. Users can also update the quantity and remove an item from their bag. They can also find out the bag total, delivery cost (when applicable) and grand total. If they are happy with their order they can click on the secure checkout button which takes them to the payment page. A "keep shopping" button is located at the bottom of the page in case a customer want to go back to the product page.
     ![](documentation/shopping-bag.png)
     -  **Checkout**
-    Users need fill in their full name, email, delivery info and card details to pay and place the order. They can also see an order summary on that page including the order total, delivery fee (when applicable) and grand total 
+    Users need fill in their full name, email, delivery info and card details to pay and place the order. They can also see an order summary on that page including the order total, delivery fee (when applicable) and grand total.
     -  **Product Management for Admin**
-    When a superuser is logged in they can find a product management option on the account dropdown. This takes them to the "add product page" where they can fill in a form and add a new product on the website
+    When a superuser is logged in they can find a product management option on the account dropdown. This takes them to the "add product page" where they can fill in a form and add a new product on the website.
     -  **Register/Login/Logout**
-    Users can  find all the links they need to register, login and logout by clicking on the account icon on the navigation bar.
+    Users can  find all the links they need to register, login and logout by clicking on the account icon on the navigation bar. If a user is register but cannot remember their account, they can click on the "forgot password" link on the sign in page. It will take them to the rest password page where they can enter their email address and receive an email with a link where they can enter a new password.
     ![](documentation/login.png)
     ![](documentation/signin.png)
     ![](documentation/sign-out.png)
     ![](documentation/signup.png)
     ![](documentation/login-register.png)
+    ![](documentation/reset.png)
   [Back to top](#Table-of-contents)
 
   ---
@@ -183,6 +186,7 @@ The website used two fonts, Rochester for the logo and Nunito for the rest on th
     - **Allow coupons to be accepted in the checkout**: This is a way to increase sales by offering discounted price to customers. For example offering a discount to a registered user that has not placed any orders to motivate them or reward a repeated customer.
     - **Subscription**: Give users the option to subscribe, paying a monthly fee and getting a free print every month.
     - **Implement Social login/register**: Give users the option to register and login using their social accounts.
+    - - **Add Sizes**: Give users the option to chose the size of the print which will affect the price of the product. This is a function that I wanted to add on the project but run out of time.
 
 [Back to top](#Table-of-contents)
 
@@ -200,6 +204,7 @@ The website used two fonts, Rochester for the logo and Nunito for the rest on th
   - [sqlite3](https://docs.python.org/3/library/sqlite3.html) - used for development
   - [ElephantSQL](https://www.elephantsql.com/) - used for deployment
 - Libraries & Packages Used
+  - [jQuery](https://jquery.com/)
   - [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) -  used to simplify user authentication, registration, account management
   - [Font Awesome](https://fontawesome.com/) - used for all the icons on the site
   - [django-countries](https://pypi.org/project/django-countries/) - dropdown list of countries used on checkout
@@ -455,11 +460,9 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
   - Boutique Ado walk-through project from [Code Institute](https://codeinstitute.net/)
   - [Bootstrap Docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
   - [Django-Allauth Documentation](https://django-allauth.readthedocs.io/en/latest/installation.html)
+  - [Stack Overflow](https://stackoverflow.com/)
+  - [CSS Tricks](https://css-tricks.com/)
 
 ### Content
 - Hero Image By [Pineapple Supply Co](https://www.pexels.com/photo/pile-of-assorted-photos-191429/)
 - Product Photos: I have taken all the photos on the website. You can find some of them on my [Instagram](https://www.instagram.com/mkp.maria/)
-
-### Acknowledgements
-
-[Back to top](#Table-of-contents)
