@@ -308,9 +308,34 @@ footer {
     color: #475654;
 }
 
-.controls input, .controls textarea {
+.contact-container input{
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #656565;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  margin: 3px;
+  width: 100%;
+}
+
+.contact-container textarea {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #656565;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    margin: 3px;
     width: 100%;
 }
+
 
 /* Media Queries */
 @media (max-width: 480px) {
