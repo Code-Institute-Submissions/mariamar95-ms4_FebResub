@@ -298,6 +298,20 @@ footer {
 	color: #475654; /* text-info */
 }
 
+/* Contact Page */
+.contact-container{
+    margin:auto;
+    width: fit-content;
+}
+
+.control-group {
+    color: #475654;
+}
+
+.controls input, .controls textarea {
+    width: 100%;
+}
+
 /* Media Queries */
 @media (max-width: 480px) {
 
