@@ -71,7 +71,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'draw_with_light.urls'
 
-CRISPY_TEMPLATES_PACK = 'bootstrap5'
+CRISPY_TEMPLATES_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
