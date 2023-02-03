@@ -3,7 +3,7 @@
 }
 
 #profile-update-form input::placeholder {
-    color: #aab7c4;
+    color: #656565;
 }
 
 #id_default_country,
@@ -12,5 +12,36 @@
 }
 
 #id_default_country option:first-child {
-    color: #aab7c4;
+    color: #656565;
+}
+
+
+.profile-form input,
+.profile-form select {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #656565;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    margin: 3px;
+    width: 100%;
+}
+
+.profile-form select{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (min-width: 480px) {
+    @media (max-width: 992px) {
+
+        .profile-form input,
+        .profile-form select {
+            width: 100%;
+        }
+    }
 }
