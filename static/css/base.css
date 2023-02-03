@@ -336,6 +336,11 @@ footer {
     width: 100%;
 }
 
+.btn-container{
+    width: fit-content;
+    margin: auto;
+}
+
 
 /* Media Queries */
 @media (max-width: 480px) {
