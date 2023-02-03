@@ -19,7 +19,3 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'contact/contact.html', {'form': form})
-
-
-def success(request):
-    return render(request, 'contact/success.html')
