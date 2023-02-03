@@ -11,11 +11,15 @@ def contact(request):
             form.save()
             messages.success(request, 'Your message was sent. \
                 Please allow up to 7 days for a response')
-            return render(request, 'contact/success.html')
+            return redirect('success')
         else:
             messages.error(request, 'Your message was not sent. \
                 Please make sure all fields are filled and try again.')
-            return redirect('contact')
     else:
         form = ContactForm()
     return render(request, 'contact/contact.html', {'form': form})
+
+
+def success(request):
+    """ A view to return the success page """
+    return render(request, 'contact/success.html')
