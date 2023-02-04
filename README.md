@@ -81,7 +81,11 @@ This site is for training purposes only, the company is fictional and no orders 
         | 6             	| Shopper 	| View an order confirmation after checkout                  	| Make sure my order was successfully placed and double check that all details are correct 	|
         | 7             	| Shopper 	| Save all orders on my Profile                              	| Easily access all orders anytime                                                       	|
         | 8             	| Shopper 	| Receive an email confirmation after checking out           	| Keep the confirmation of what I've purchased for my records                             	|
-
+    - #### CONTACT
+      | User Story ID 	| As a              	| I want to be able to... 	| So that I can...                         	|
+      |---------------	|-------------------	|-------------------------	|------------------------------------------	|
+      | 1             	| Shopper 	| Contact the admin           	| Add new items to my store                	|
+    
     - #### ADMIN & STORE MANAGEMENT
       | User Story ID 	| As a              	| I want to be able to... 	| So that I can...                         	|
       |---------------	|-------------------	|-------------------------	|------------------------------------------	|
