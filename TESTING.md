@@ -37,6 +37,10 @@
     ![](documentation/html-validation.png)
   - Edit Products
     ![](documentation/html-validation.png)
+  - Contact Page
+   ![](documentation/html-validation.png)
+  - Contact Success
+   ![](documentation/html-validation.png)
 
   ### CSS
   - base.css
