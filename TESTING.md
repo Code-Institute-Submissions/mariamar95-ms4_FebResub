@@ -10,6 +10,8 @@
     - [JS](#js)
     - [Python](#python)
   - [Automated Testing](#automated-testing)
+    - [Automated Testing for Home, Bag \& Products Apps:](#automated-testing-for-home-bag--products-apps)
+    - [Automated Testing for Contact App:](#automated-testing-for-contact-app)
   - [Manual Testing](#manual-testing)
     - [Testing User Stories](#testing-user-stories)
     - [Devices used for testing:](#devices-used-for-testing)
@@ -155,15 +157,25 @@ All `E501 line too long` results were fixed
 --- 
 
 ## Automated Testing
-In this project their are 3 instances of automated testing. I would like to note that if given more time i would have liked to have expanded on this, however the deadline was extremely tight.
-The apps that i have tested are:
-  - Home Page
-   ![](documentation/test-home.png)
-  - Bag
-   ![](documentation/test-bag.png)
-  - Products
-   ![](documentation/test-products.png)
+### Automated Testing for Home, Bag & Products Apps:
+
+- Home Page
+  - ![](documentation/test-home.png)
+- Bag
+  - ![](documentation/test-bag.png)
+- Products
+  - ![](documentation/test-products.png)
 These tests are all in a separate file called test_views.py within the relevant app folders, and have been written using Python.
+
+### Automated Testing for Contact App:
+Automated testing was written for:
+- views.py
+- forms.py
+- models.py
+- ![](documentation/test-contact.png)
+
+I have also used [coverage](https://pypi.org/project/coverage/) to check what percentage of the app has been tested and which parts were missing.
+![](documentation/contact-test-coverage.png)
 
 [Back to top](#Table-of-contents)
 
