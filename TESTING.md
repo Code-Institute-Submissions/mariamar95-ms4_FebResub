@@ -130,6 +130,23 @@
     - Results: All clear, no errors found
   - views.py
     - Results: All clear, no errors found
+- **contact app**
+  - admin.py
+    - `28: W292 no newline at end of file`
+      - New line added and tested again:
+      - Results: All clear, no errors found
+  - apps.py
+    - Results: All clear, no errors found
+  - forms.py
+    - `26: E501 line too long (82 > 79 characters)`
+      - Fixed long line and tested again:
+      - Results: All clear, no errors found
+  - models.py
+    - Results: All clear, no errors found
+  - urls.py
+    - Results: All clear, no errors found
+  - views.py
+    - Results: All clear, no errors found
 
 All `E501 line too long` results were fixed
 
