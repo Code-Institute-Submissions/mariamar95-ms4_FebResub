@@ -26,3 +26,4 @@ class ContactFormAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Contact, ContactFormAdmin)
+
