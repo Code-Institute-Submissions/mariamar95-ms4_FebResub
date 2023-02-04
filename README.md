@@ -84,7 +84,7 @@ This site is for training purposes only, the company is fictional and no orders 
     - #### CONTACT
       | User Story ID 	| As a              	| I want to be able to... 	| So that I can...                         	|
       |---------------	|-------------------	|-------------------------	|------------------------------------------	|
-      | 1             	| Shopper 	| Contact the admin           	| Add new items to my store                	|
+      | 1             	| Shopper 	| Contact the admin team          	| Ask questions about the e-shop             	|
     
     - #### ADMIN & STORE MANAGEMENT
       | User Story ID 	| As a              	| I want to be able to... 	| So that I can...                         	|
@@ -219,6 +219,7 @@ The website used two fonts, Rochester for the logo and Nunito for the rest on th
   - [psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database
   - [django-storages](https://pypi.org/project/django-storages/) - a storage backend library
   - [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
+  - [coverage](https://coverage.readthedocs.io/en/7.1.0/) - used to check if testing is missing 
 - Stripe
   - [Stripe](https://stripe.com/gb) was used in the project to implement the payment system
 - Programs Used
