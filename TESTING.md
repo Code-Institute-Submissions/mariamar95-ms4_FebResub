@@ -54,7 +54,9 @@
   - stripe_elements.js
     ![](documentation/js1.png)
     Warning for line 34 and 98 were ignored. I added the missing semicolon and tested again.
-    ![](documentation/js2.png)  
+    ![](documentation/js2.png) 
+  - profile.js 
+     ![](documentation/profile-js-validation.png)
 
   ### Python
   Validated using [Code Institute Python Linter](https://pep8ci.herokuapp.com/)
