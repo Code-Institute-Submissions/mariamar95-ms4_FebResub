@@ -188,11 +188,17 @@
 
     <footer class="fixed-bottom">
         <div class="container-fluid ">
-            <div class="row align-items-center py-2">
-                <div class="col-6 col-lg-8 my-auto px-3">
-                    <span class=""> Made by <strong>Maria Markou-Inglis</strong></span></div>
-                <div class="col-6 col-lg-4 my-auto py-1 py-lg-0 text-lg-left">
+            <div class="row py-2">
+                <div class="col-md-6 col-lg-8 my-auto px-3 d-none d-sm-none d-md-inline">
+                    <span> Made by <strong>Maria Markou-Inglis</strong></span>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-auto py-1 py-lg-0 text-lg-left">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                        <li class="list-inline-item hvr-grow">
+                            <a class="nav-link text-uppercase" href="{% url 'contact' %}" aria-label="Contact Page.">
+                                Contact Us <i class="ml-3 fa-solid fa-envelope fa-lg"></i>
+                            </a>
+                        </li>
                         <li class="list-inline-item hvr-grow">
                             <a class="nav-link" href="https://github.com/mariamar95" target="_blank" aria-label="Maria Markou-Inglis GitHub Page. Opens is a new tab">
                                     <i class="fa-brands fa-github fa-lg"></i>
