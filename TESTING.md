@@ -188,15 +188,15 @@ I have also used [coverage](https://pypi.org/project/coverage/) to check what pe
     A navbar is provided at the top of the page which allows all users to easily access their account, home page, shop, search bar and bag. The navigation bar is different depending on the size of the screen used
       ![](documentation/nav-bar-mobile.png)
       ![](documentation/nav-bar.png)
-  1. **As a Shopper I want to view products by category so that I can find specific items I am interested in without having to scroll through all products**
+  2. **As a Shopper I want to view products by category so that I can find specific items I am interested in without having to scroll through all products**
      On bigger screens users can find a row with where there is a button for each category (Portrait, Landscape, Square), and a button for all products.
     ![](documentation/n
     Users can find all categories when clicking on the sav-bar.png)hop icon located on the navbar
     ![](documentation/shop-dropdown.png)
     On smaller screens users can find all categories by clicking on the shop icon only. 
-  2. **As a shopper I want to view details of each product so that I can learn more about each product**	
+  3. **As a shopper I want to view details of each product so that I can learn more about each product**	
     When a user selects a product, they will be taken to the product detail page which lists more information about the item, such as the item name, price and description. Users can also click on the product image to view a larger version.
-  3. **As a shopper I want to view the items I have in my bag so that I can check whether I still wish to purchase the items and amend the quantity if required** 	
+  4. **As a shopper I want to view the items I have in my bag so that I can check whether I still wish to purchase the items and amend the quantity if required** 	
       Users can find all products  currently selected for purchase, along with the quantity, item price and subtotal for that item. At the bottom of their bag there is a section that lets them know the total for the items in their bag, the delivery charge (where applicable) and their grand total. Users can update quantity or remove an item using the buttons ot that page.
       ![](documentation/shopping-bag.png)
   - #### REGISTRATION & USER ACCOUNTS
@@ -252,6 +252,13 @@ I have also used [coverage](https://pypi.org/project/coverage/) to check what pe
   8. **As as shopper I want to be able to receive an email confirmation after checking out so that I can Keep the confirmation of what I've purchased for my records**
   Upon successful checkout, a user will be sent a confirmation email
   ![](documentation/email.png)
+
+  - #### CONTACT
+   1. **As an a shopper I want to be able to contact the admin team so that I can ask questions about the e-shop**
+   Users can access the contact page from the footer. When a user clicks on the "contact us" link on the footer, they are taken to the contact page where they have to fill the a form and click the "send" button. If field is missing the form will not be submitted and the user will be prompted to fill it. If all fields are filled and the user clicks on the the "send" button, they are taken to the success page. On that page they can also see a pop-up success message that informs users that it may take up to 7 days to get a reply. If the user has any items in the shopping bag, they will be displayed on the pop-up message as a reminder. To exit this page users can either use the navigation bar on the "keep shopping button"
+  ![](documentation/home-mobile.png)
+  ![](documentation/invalid-contact-form.png)
+  ![](documentation/contact-success.png)
   - #### ADMIN & STORE MANAGEMENT
    1. **As an admin I want to be able to add a product so that I can add new items to my store**
    When an admin is logged in (superuser account), they can find a product management option once they click on their account icon located on the navigation bar. This option will take them to the add product page where they can fill in the form and add a new product which will automatically be displayed on the product page.
