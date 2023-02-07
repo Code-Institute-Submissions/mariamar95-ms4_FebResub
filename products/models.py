@@ -31,12 +31,10 @@ class Product(models.Model):
 
 
 class Review(models.Model):
-    product = models.ForeignKey('Product', on_delete=models.CASCADE, related_name='reviews')
-    name = models.CharField(max_length=80, null=True, blank=True)
-    body = models.TextField()
-
-    class Meta:
-        ordering = ['created_on']
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    author = models.CharField(max_length=200)
+    content = models.TextField()
+    rating = models.PositiveSmallIntegerField()
 
     def __str__(self):
         return self.product.name
