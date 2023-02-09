@@ -84,12 +84,14 @@
             <!--Reviews-->
             <div class="col-12 text-black">
                 <h2 class="dark-title">Reviews for {{ product.name }}:</h2>
-                {% for review in product.review_set.all %}
-                    <h4>{{ review.author }} - {{ review.rating }}/5</h4>
-                    <p>{{ review.content }}</p>
-                    {% empty %}
-                    <p>No reviews yet for this product.</p>
-                {% endfor %}
+                <div class="m-2 p-1">
+                    {% for review in product.review_set.all %}
+                        <h4>{{ review.author }} - {{ review.rating }}/5</h4>
+                        <p>{{ review.content }}</p>
+                        {% empty %}
+                        <p>No reviews yet for this product.</p>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
