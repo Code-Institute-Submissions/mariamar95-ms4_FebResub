@@ -124,6 +124,7 @@ def delete_product(request, product_id):
 
 
 def add_review(request, product_id):
+    """ Add a product review """
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ReviewForm(request.POST)
@@ -131,7 +132,11 @@ def add_review(request, product_id):
             review = form.save(commit=False)
             review.product = product
             review.save()
+            messages.success(request, 'Your review has been added!')
             return redirect('product_detail', product_id=product.id)
+        else:
+            messages.error(request, 'There was an error with your submission. \
+            Please try again.')
     else:
         form = ReviewForm()
 
