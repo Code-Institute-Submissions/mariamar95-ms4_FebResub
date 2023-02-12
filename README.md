@@ -69,7 +69,11 @@ This site is for training purposes only, the company is fictional and no orders 
         |---------------	|---------	|---------------------------------------------	|----------------------------------------------	|
         | 1             	| Shopper 	| Search for a product by name or description 	| Find a specific product I'd like to purchase 	|
         | 2             	| Shopper 	| Find products from a specific category      	| Only see product from that category          	|
-
+    - #### Review 
+        | User Story ID 	| As a    	| I want to be able to ...                    	| So that I can...                                        	|
+        |---------------	|---------	|---------------------------------------------	|----------------------------------------------	|
+        | 1             	| Shopper 	| Read product reviews 	| Find out what other shoppers think about the product  	|
+        | 2             	| Shopper 	| Add a product review 	| Share my experience using the product with other shoppers  	|
     - #### PURCHASING & CHECKOUT
         | User Story ID 	| As a    	| I want to be able to...                                    	| So that I can...                                                                        	|
         |---------------	|---------	|------------------------------------------------------------	|-----------------------------------------------------------------------------------------	|
@@ -92,6 +96,7 @@ This site is for training purposes only, the company is fictional and no orders 
       | 1             	| Store Owner/Admin 	| Add a product           	| Add new items to my store                	|
       | 2             	| Store Owner/Admin 	| Edit a product          	| Update product details                   	|
       | 3             	| Store Owner/Admin 	| Delete a product        	| Remove items that are no longer for sale 	|
+      | 4             	| Store Owner/Admin 	| Delete a product review   | Remove product reviews that might have been entered incorrectly 	|
   [Back to top](#Table-of-contents)
 
   ---
