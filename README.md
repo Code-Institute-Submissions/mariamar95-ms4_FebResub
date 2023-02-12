@@ -197,7 +197,7 @@ The website used two fonts, Rochester for the logo and Nunito for the rest on th
   ### Future Implementations
   - #### In future implementations I would like to:
     - **Add Wishlist functionality**: Allow users to save all their favorite prints so that it is easier to find them when they revisit the website.
-    - **Add user reviews**: Allow users to review products and share photos of how the used the print to decorate their space.
+    - **Submit photos as part of their reviews**: Allow users to share photos of how the used the print to decorate their space.
     - **Send newsletters to users**: Give all users the option to sign up to the newsletter and keep them updated on the latest offers.
     - **Allow coupons to be accepted in the checkout**: This is a way to increase sales by offering discounted price to customers. For example offering a discount to a registered user that has not placed any orders to motivate them or reward a repeated customer.
     - **Subscription**: Give users the option to subscribe, paying a monthly fee and getting a free print every month.
