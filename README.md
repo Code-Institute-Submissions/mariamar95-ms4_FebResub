@@ -114,13 +114,15 @@ This site is for training purposes only, the company is fictional and no orders 
   ---
 
   ### Database schema
-  ![](documentation/db.png)
-  The site uses five models as shone above:
+  ![](documentation/db2.png)
+  The site uses seven models as shone above:
   - User 
   - Order 
   - Order Line Item
   - Product 
   - Category
+  - Review
+  - Contact
 
   [Back to top](#Table-of-contents)
 
