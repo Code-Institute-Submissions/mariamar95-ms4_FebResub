@@ -229,6 +229,16 @@ I have also used [coverage](https://pypi.org/project/coverage/) to check what pe
   Users viewing the website from smaller screens can find all product categories by clicking on the shop dropdown icon on the navigation bar. Users on bigger screen can find a second row on the navigation bar with a button for each category
   ![](documentation/nav-bar.png)
   ![](documentation/shop-dropdown.png)
+
+  - #### REVIEWING PRODUCTS
+  1. **As a shopper I want to be able to read product reviews	so that I can find out what other shoppers think about the product**
+  Users can read product reviews on the product detail page. If the product doesn't have any reviews a message is displayed to let the customer know.
+  ![](documentation/no_review.png)
+  1. **As a shopper I want to be able to add a product review	so that I can share my experience using the product with other shoppers**
+  All website users can find an "Add Review" button on the product details page, even if they have not logged in. When a user clicks on the "Add Review" button, a new page will open up.
+  ![](documentation/add-review-fail.png)
+  On this page, users can fill in the form and add a review. If one of the fields is empty when submitting the form, users will be prompted to fill it. When the review is submitted, the users is redirected to the product details page where they can see the review they have added. They can also see a pop-up message, telling them that the review has been successfully submitted.
+
   - #### PURCHASING & CHECKOUT
   1. **As as shopper I want to be able to easily select the quantity of a product when purchasing it	so that I can ensure I don't accidentally select the wrong quantity**
   Users can easily adjust and select the quantity they need by clicking on the - & + symbols on the product-details page, before adding the product in their bag.
@@ -271,6 +281,9 @@ I have also used [coverage](https://pypi.org/project/coverage/) to check what pe
     ![](documentation/admin-product-detail.png)
   3. **As an admin I want to be able to delete a product so that I can remove items that are no longer for sale**
    When a superuser is logged in, they are shown an edit delete button underneath each product on the products page. The same delete button is also shown on the product detail page. Once the admin clicks the button the product is     automatically deleted
+  4. **As an admin I want to be able to delete a product review so that I can remove reviews that might have been entered incorrectly**
+   When a superuser is logged in, they can see delete button next to the name and rating on the review. This button is only displayed when a superuser is logged in, normal users cannot access the "Delete" button. Once the superuser clicks on the "delete" button, the review will be deleted and a pop-up message will let them know that it was successfully done.
+   ![](documentation/review-delete.png)
 ### Devices used for testing:
 - MacBook Pro 15' - Desktop
 - Xiaomi Redmi Note 10 - Mobile
