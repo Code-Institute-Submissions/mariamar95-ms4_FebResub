@@ -86,7 +86,10 @@
                 <h2 class="dark-title">Reviews for {{ product.name }}:</h2>
                 <div class="m-2 p-1">
                     {% for review in product.review_set.all %}
-                        <h4>{{ review.author }} - {{ review.rating }}/5</h4>
+                        <h4 class="d-inline">{{ review.author }} - {{ review.rating }}/5</h4>
+                        {% if user.is_authenticated and user.is_superuser %}
+                            <a href="{% url 'delete_review' product.id review.id %}" class="text-danger d-inline">Delete</a>
+                        {% endif %}
                         <p>{{ review.content }}</p>
                         {% empty %}
                         <p>No reviews yet for this product.</p>
