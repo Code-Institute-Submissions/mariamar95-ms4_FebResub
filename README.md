@@ -161,12 +161,14 @@ The website used two fonts, Rochester for the logo and Nunito for the rest on th
     This site uses django's messages framework to provide users with helpful feedback at multiple points through their journey in the form of toasts.
     ![](documentation/success.png)
 
-  -  **Home Page**
+    -  **Home Page**
     When users land on the home page, they see a welcome message. Under the welcome message they can find what offer is on at the moment and a shop button so that they can view all products with one click.
     ![](documentation/home.png)   
-  -  **Products Page**
+    -  **Products Page**
     The product page contains cards for each product. Users can find the name, category and price of the product. Superusers can also find a delete and edit button on the cards.  
     ![](documentation/p-page.png)
+    - **Product Detail Page**
+    The product detail page opens up when a user clicks on a product card, on the products page. Users can find more details regarding the product, including reviews from other users and can add the product in the basket. On this page users can also click the "add review" button, fill in the form witch will open on a different page, and submit a product review.
     -  **Profile Page**
     On the profile page, users can save their delivery information so that they do not have to enter them every time they place an order. They can also view a list with all the orders they have placed.
     ![](documentation/profile.png)
@@ -175,6 +177,9 @@ The website used two fonts, Rochester for the logo and Nunito for the rest on th
     ![](documentation/shopping-bag.png)
     -  **Checkout**
     Users need fill in their full name, email, delivery info and card details to pay and place the order. They can also see an order summary on that page including the order total, delivery fee (when applicable) and grand total.
+    -  **Contact Page**
+    Users can click on the contact us link which is located on the footer and can be found on every page. They can fill in a form and contact the admin team with any questions or queries they might have.
+    ![](documentation/contact_us-form.png)
     -  **Product Management for Admin**
     When a superuser is logged in they can find a product management option on the account dropdown. This takes them to the "add product page" where they can fill in a form and add a new product on the website.
     -  **Register/Login/Logout**
